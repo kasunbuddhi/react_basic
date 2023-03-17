@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { MyFunction } from './components/MyFuncComp';
+import { MyClassComp } from './components/MyClassComp';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
+    <MyClassComp/>
     <MyFunction name = "type script test"/>
   </React.StrictMode>
 );
