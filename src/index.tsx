@@ -4,14 +4,17 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { MyFunction } from './components/MyFuncComp';
 import { MyClassComp } from './components/MyClassComp';
+import {BrowserRouter} from 'react-router-dom';
+import App from './App';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <MyClassComp/>
-    <MyFunction name = "type script test"/>
+    <BrowserRouter>
+    <App/>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
